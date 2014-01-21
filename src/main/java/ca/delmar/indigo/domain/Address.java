@@ -1,4 +1,4 @@
-package ca.delmar.api.domain;
+package ca.delmar.indigo.domain;
 
 import java.io.Serializable;
 import java.util.Collection;

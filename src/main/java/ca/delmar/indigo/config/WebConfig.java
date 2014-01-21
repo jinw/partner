@@ -1,4 +1,4 @@
-package ca.delmar.api.config;
+package ca.delmar.indigo.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.joda.JodaModule;
@@ -23,7 +23,7 @@ import java.util.List;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages="ca.delmar.api")
+@ComponentScan(basePackages= "ca.delmar.indigo")
 public class WebConfig extends WebMvcConfigurerAdapter {
 
     @Override

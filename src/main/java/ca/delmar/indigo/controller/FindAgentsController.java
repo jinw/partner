@@ -1,7 +1,7 @@
-package ca.delmar.api.controller;
+package ca.delmar.indigo.controller;
 
-import ca.delmar.api.domain.Address;
-import ca.delmar.api.domain.Contact;
+import ca.delmar.indigo.domain.Address;
+import ca.delmar.indigo.domain.Contact;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;

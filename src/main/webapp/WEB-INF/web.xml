@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
 
     <servlet>
-        <servlet-name>api</servlet-name>
+        <servlet-name>indigo</servlet-name>
         <servlet-class>
             org.springframework.web.servlet.DispatcherServlet
         </servlet-class>
@@ -14,12 +14,12 @@
         </init-param>
         <init-param>
             <param-name>contextConfigLocation</param-name>
-            <param-value>ca.delmar.api.config</param-value>
+            <param-value>ca.delmar.indigo.config</param-value>
         </init-param>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>api</servlet-name>
+        <servlet-name>indigo</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
 
