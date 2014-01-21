@@ -49,19 +49,19 @@
             <form class="navbar-form navbar-right" action="${formUrl}" method="get" role="form">
                 <span style="font-size:18px">Search</span>
                 <div class="form-group">
-                    <select class="form-control" name="mode"><option>Select mode</option>
-                        <option value="2">Air</option>
+                    <select class="form-control" name="mode">
+                        <option value="2" selected>Air</option>
                         <option value="3">Sea</option>
                         <%--<option value="all">All</option>--%>
                     </select>
                 </div>
                 <div class="form-group">
-                    <input type="text" placeholder="name" class="form-control">
+                    <input type="text" placeholder="name" class="form-control" name="addr">
                 </div>
                 <div class="form-group">
-                    <select class="form-control" name="country"><option>Select a country </option>
+                    <select class="form-control" name="country">
                         <option value="250">France</option>
-                        <option value="276">Germany</option>
+                        <option value="276" selected>Germany</option>
                     </select>
                 </div>
                 <button type="submit" class="btn btn-primary">Search</button>
@@ -70,14 +70,15 @@
 
     </div>
 </div>
+
 <div class="visible-print pull-right clearfix" ><img src="<spring:url value="/static/img/logo_delmar.gif"/>" alt="Delmar International Inc" height="42" border="0" width="157" />
 
 </div>
 
 <c:if test="${fn:length(agents) == 0}">
-    <div class="">
-        <p>A default Delmar Agent is not currently listed, please contact us at info@delmarcargo.com, Thank you.</p>
-    </div>
+  <div class="container">
+    <p>A default Delmar Agent is not currently listed, please contact us at info@delmarcargo.com, Thank you.</p>
+  </div>
 </c:if>
 
 <c:forEach var="row" items="${agents}" varStatus="status">
@@ -109,23 +110,6 @@
     </div>
 </div>
 </c:forEach>
-
-<div class="container">
-    <h4>Delmar agent in Germanringen,Germany</h4>
-    <div class="row">
-        <div class="col-md-6">
-            <p><b>Germanringen</b></p>
-            <p>Bayern<br/>D-87656<br/>German</p>
-            <p>Tel : 49 8341 660011</p>
-        </div>
-        <div class="col-md-6">
-            <p><b>Contacts</b></p>
-            <p>Mr. Martina Weiss <br/>Email : <a href="mailto:weissM@dietrich-logistic.com">weissM@dietrich-logistic.com</a></p>
-        </div>
-    </div>
-</div>
-
-</div>
 
 <div class="container">
     <footer>

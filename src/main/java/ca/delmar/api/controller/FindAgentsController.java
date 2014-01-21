@@ -33,7 +33,7 @@ public class FindAgentsController {
     }
 
     @RequestMapping(method = RequestMethod.GET)
-    public String findAgents(@RequestParam("addr") String addressName,
+    public String findAgents(@RequestParam(value = "addr", required = false) String addressName,
                              @RequestParam(value = "country", defaultValue = "276") String country,
                              @RequestParam(value = "mode", defaultValue = "2") String mode,
                              @RequestParam(value = "com", defaultValue = "1") String company,
