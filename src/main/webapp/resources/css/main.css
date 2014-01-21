@@ -1,0 +1,168 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+@media (min-width: 768px) {
+  .navbar-collapse {
+	padding-top:12px;
+  }
+  
+.navbar {
+	color: #000;
+	min-height:70px;	
+	height:auto;
+	
+}
+
+
+.navbar-default {
+  background:rgba(255,255,255,0.85);	
+}
+
+.navbar-nav >li > a {
+	color:#000;
+}
+
+}
+
+@media (max-width: 767px) {
+	.navbar-toggle {
+  margin-top: 10px;
+}
+	.navbar-brand > img {
+		height:30px;
+		width:110px;
+	}
+}
+
+
+
+/* full background image */
+.coverPage {
+  padding: 30px;
+  margin-bottom: 30px;
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 2.1428571435;
+  color: inherit;
+  margin-top:-50px;
+  height:800px;
+  width:auto;
+  background-image: url(../img/cover1400.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display:block; 
+  text-align:center;
+}
+
+.hero-unit {
+	padding:60px;
+	margin-bottom:30px;
+	font-size:18px;
+	font-weight:200;
+	line-height:30px;
+	color:inherit;
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	border-right:6px;
+	
+}
+
+.coverPage .covertitle {
+	padding-top:200px;
+	padding-bottom:80px;
+}
+
+.coverPage .covertitle h1 {
+	font-size:42px;
+	
+	font-weight:200;
+	color:#FFF;
+}
+
+.coverPage .covertag {
+	padding-top:220px;
+	color:#fff;
+	width:100%;
+	
+}
+
+.coverPage .covertag h4{
+	width:50%;
+	margin:0 auto;
+}
+
+.coverPage .hero-unit {
+	display:table;
+	border-collapse:collapse;
+	padding:0px;
+	margin:10px auto;
+	background: transparent;
+}
+
+.coverPage .hero-unit > * {
+
+	vertical-align:middle;
+	border: 3px solid #fff;
+	padding: 10px;
+	text-align:left;
+}
+
+.coverPage .hero-unit h1 {
+  margin: 5px;
+  padding: 10px;
+  font-size:28px;
+  font-weight:100px;
+  color:#fff;
+}
+
+.coverPage p {
+  line-height: 1.4;
+}
+
+.container .coverPage {
+  border-radius: 6px;
+}
+
+.fad-container {
+	display:inline-block;
+	color:#000;;
+	height:30px;
+	width:30px;
+	background-color:#FFF;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	text-align:center;
+	
+	}
+
+@media screen and (min-width: 768px) {
+  .coverPage {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .container .coverPage {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  .coverPage h1 {
+    font-size: 63px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
