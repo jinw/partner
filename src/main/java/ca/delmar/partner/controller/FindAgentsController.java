@@ -1,10 +1,11 @@
-package ca.delmar.indigo.controller;
+package ca.delmar.partner.controller;
 
-import ca.delmar.indigo.domain.Address;
-import ca.delmar.indigo.domain.Contact;
+import ca.delmar.partner.domain.Address;
+import ca.delmar.partner.domain.Contact;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,7 +23,7 @@ import java.util.List;
  * Created by jinw on 21/01/14.
  */
 @Controller
-@RequestMapping("/agents")
+@RequestMapping("/indigo")
 public class FindAgentsController {
 
     private JdbcTemplate jdbcTemplate;
@@ -32,7 +33,7 @@ public class FindAgentsController {
         this.jdbcTemplate = new JdbcTemplate(dataSource);
     }
 
-    @RequestMapping(method = RequestMethod.GET)
+    @RequestMapping("/agents")
     public String findAgents(@RequestParam(value = "addr", required = false) String addressName,
                              @RequestParam(value = "country", defaultValue = "276") String country,
                              @RequestParam(value = "mode", defaultValue = "2") String mode,
