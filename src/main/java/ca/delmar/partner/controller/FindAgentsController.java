@@ -46,6 +46,8 @@ public class FindAgentsController {
             agents = findAgentsByCountry(country, mode, company);
         }
         model.addAttribute("agents", agents);
+        model.addAttribute("mode", mode);
+        model.addAttribute("country", country);
         return "agents";
     }
 
