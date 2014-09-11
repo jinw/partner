@@ -1,6 +1,6 @@
 apply plugin: 'war'
 apply plugin: 'jetty'
-apply plugin: 'eclipse-wtp'
+//apply plugin: 'eclipse-wtp'
 
 repositories {
    mavenCentral()
@@ -8,19 +8,17 @@ repositories {
 
 dependencies {
    providedCompile 'javax.servlet:servlet-api:2.5'
-   compile 'org.springframework:spring-jdbc:4.0.0.RELEASE'
-   compile 'org.springframework:spring-webmvc:4.0.0.RELEASE'
-   compile 'org.springframework.security:spring-security-web:3.2.0.RELEASE'
-   compile 'org.springframework.security:spring-security-config:3.2.0.RELEASE'
-   compile 'com.fasterxml.jackson.core:jackson-core:2.3.0'
-   compile 'com.fasterxml.jackson.core:jackson-databind:2.3.0'
-   compile 'com.fasterxml.jackson.datatype:jackson-datatype-joda:2.3.0'
+   compile 'org.springframework:spring-jdbc:4.0.7.RELEASE'
+   compile 'org.springframework:spring-webmvc:4.0.7.RELEASE'
+   compile 'org.springframework.security:spring-security-web:3.2.5.RELEASE'
+   compile 'org.springframework.security:spring-security-config:3.2.5.RELEASE'
+   compile 'com.fasterxml.jackson.core:jackson-core:2.4.2'
+   compile 'com.fasterxml.jackson.core:jackson-databind:2.4.2'
+   compile 'com.fasterxml.jackson.datatype:jackson-datatype-joda:2.4.2'
 
    runtime 'javax.servlet:jstl:1.2'
 
    testCompile 'junit:junit:4.11'
 }
 
-sourceCompatibility = 1.6
-targetCompatibility = 1.6
 jettyRunWar.contextPath = '' //otherwise defaults to name of project

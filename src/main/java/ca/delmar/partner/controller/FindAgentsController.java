@@ -54,14 +54,12 @@ public class FindAgentsController {
     // ------- service methods --------
     public List<Address> findAgentsByCountry(String countryId, String modeId, String siteId) {
         List<Address> lines = jdbcTemplate.query(SQL_FIND_AGENTS_BY_COUNTRY, new Object[]{countryId, modeId, siteId}, new AddressMapper());
-        List<Address> result = transformAddresses(lines);
-        return result;
+        return transformAddresses(lines);
     }
 
     public List<Address> findAgentsByAddressName(String addressName, String modeId, String siteId) {
         List<Address> lines = jdbcTemplate.query(SQL_FIND_AGENTS_BY_ADDRESSNAME, new Object[]{"%" + addressName + "%", modeId, siteId}, new AddressMapper());
-        List<Address> result = transformAddresses(lines);
-        return result;
+        return transformAddresses(lines);
     }
 
     public List<Address> transformAddresses(List<Address> contactLine) {

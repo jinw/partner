@@ -1,4 +1,4 @@
-indigo-mvc
+partner-mvc
 ========================
 
 Spring mvc application.
